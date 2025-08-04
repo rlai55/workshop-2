@@ -37,34 +37,34 @@ public class GeneratePyramid : MonoBehaviour
         // depends on the way the mesh surface itself is defined (step 3).
         mesh.SetVertices(new[]
         {
-            // Bottom face (square base, two triangles)
-            new Vector3(-1.0f, -1.0f,  1.0f),  // tl
-            new Vector3( 1.0f, -1.0f,  1.0f),  // tr
-            new Vector3(-1.0f, -1.0f, -1.0f),  // bl
+            // Bottom face
+            new Vector3(-1.0f, -1.0f, 1.0f),
+            new Vector3(-1.0f, -1.0f, -1.0f),
+            new Vector3(1.0f, -1.0f, 1.0f),
 
-            new Vector3( 1.0f, -1.0f,  1.0f),  // tr
-            new Vector3( 1.0f, -1.0f, -1.0f),  // br
-            new Vector3(-1.0f, -1.0f, -1.0f),  // bl
+            new Vector3(1.0f, -1.0f, 1.0f),
+            new Vector3(-1.0f, -1.0f, -1.0f),
+            new Vector3(1.0f, -1.0f, -1.0f),
 
             // Front face
-            new Vector3(0.0f, 1.0f, 0.0f),     // tip
-            new Vector3( 1.0f, -1.0f, 1.0f),   // tr
-            new Vector3(-1.0f, -1.0f, 1.0f),   // tl
+            new Vector3(0.0f, 1.0f, 0.0f),
+            new Vector3(-1.0f, -1.0f, 1.0f),
+            new Vector3(1.0f, -1.0f, 1.0f),
 
             // Right face
-            new Vector3(0.0f, 1.0f, 0.0f),     // tip
-            new Vector3( 1.0f, -1.0f, -1.0f),  // br
-            new Vector3( 1.0f, -1.0f,  1.0f),  // tr
+            new Vector3(0.0f, 1.0f, 0.0f),
+            new Vector3(1.0f, -1.0f, 1.0f),
+            new Vector3(1.0f, -1.0f, -1.0f),
 
             // Back face
-            new Vector3(0.0f, 1.0f, 0.0f),     // tip
-            new Vector3(-1.0f, -1.0f, -1.0f),  // bl
-            new Vector3( 1.0f, -1.0f, -1.0f),  // br
+            new Vector3(0.0f, 1.0f, 0.0f),
+            new Vector3(1.0f, -1.0f, -1.0f),
+            new Vector3(-1.0f, -1.0f, -1.0f),
 
             // Left face
-            new Vector3(0.0f, 1.0f, 0.0f),     // tip
-            new Vector3(-1.0f, -1.0f,  1.0f),  // tl
-            new Vector3(-1.0f, -1.0f, -1.0f),  // bl
+            new Vector3(0.0f, 1.0f, 0.0f),
+            new Vector3(-1.0f, -1.0f, -1.0f),
+            new Vector3(-1.0f, -1.0f, 1.0f),
 
 
         });
